@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let product of products">
+    <p>{{ product.nom }}</p>
+    <img src="{{ product.image }}" alt="image fruit" />
+    <p>{{ product.prixHT }} € HT</p>
+    <div>
+      <button (click)="removeOneQuantity(product)">-</button>
+      <p>{{ product.quantite }}</p>
+      <button (click)="addOneQuantity(product)">+</button>
+    </div>
+    <button (click)="addToCard(product)" class="add">Ajouter</button>
+  </li>
+</ul>

@@ -1,0 +1,36 @@
+ul
+    width: 100%
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    gap: 60px
+    padding: 20px 0
+    li
+        width: 100%
+        border: 1px solid #4b4b4b
+        border-radius: 6px
+        padding: 20px
+        text-align: center
+        *
+            margin: 5px 0
+        img
+            width: 80px
+            height: 80px
+        div
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            button
+                width: 30px
+                height: 30px
+                border: none
+                color: #fff
+                border-radius: 5px
+                background-color: #0aab02
+                &:nth-child(1)
+                    background-color: #951818
+        button.add
+            padding: 10px
+            border: none
+            background-color: #745bc6
+            color: #fff
+            border-radius: 5px
